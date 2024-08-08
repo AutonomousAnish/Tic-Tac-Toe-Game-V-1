@@ -1,0 +1,96 @@
+  /* 0   |  1  |  2  
+   ------|-----|------
+     3   |  4  |  5  
+   ------|-----|------
+     6   |  7  |  8   */
+
+/*   winning patterns : 0,1,2 | 3,4,5 | 6,7,8 | 0,3,6 | 1,4,7 | 2,5,8 | 0,4,8 | 2,4,6     */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #6e0d25;
+    /* FFFFB3 */
+    /* DCAB6B */
+    text-align: center;
+    color: beige;
+}
+main {
+    margin-top: 1.5rem;
+}
+
+.container {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;
+    color: #c77b19;
+    background-color: #ffffd2;
+}
+#reset-btn {
+    padding: 1rem;
+    background-color: #ffffb3;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    color: rgb(77, 9, 9);
+    font-weight: 700;
+    border: none;
+    transition: all 100ms;
+}
+#reset-btn:hover {
+    font-size: 1.3rem;
+}
+
+#newBtn {
+    padding: 1rem;
+    background-color: #ffffb3;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    color: rgb(77, 9, 9);
+    font-weight: 700;
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 300ms;
+}
+#newBtn:hover {
+    background-color: rgb(119, 252, 96);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+#winnerMsg {
+    color: #ffffd2;
+    font-size: 5vmin;
+}
+/* .msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+} */
+
+.hide {
+    display: none;
+}
